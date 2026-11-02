@@ -1,0 +1,4 @@
+#!/bin/sh
+# Leak guard: rejects staged lines or paths that name private projects or strings (see README).
+command -v uv >/dev/null 2>&1 || { echo "pre-commit: uv not found, leak guard cannot run" >&2; exit 1; }
+exec uv run --frozen --quiet wrag guard --staged

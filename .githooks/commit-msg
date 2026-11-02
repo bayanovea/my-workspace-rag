@@ -1,0 +1,3 @@
+#!/bin/sh
+command -v uv >/dev/null 2>&1 || { echo "commit-msg: uv not found, leak guard cannot run" >&2; exit 1; }
+exec uv run --frozen --quiet wrag guard --msg "$1"
