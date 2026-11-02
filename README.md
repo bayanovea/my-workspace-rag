@@ -1,8 +1,9 @@
-# wrag: where did we put that?
+# wrag: RAG over your local projects
 
-`wrag` answers questions like *"a while ago we added a rate limiter somewhere, where was it?"* across a
-set of local projects. The answer is a **location** (project + file, or project + commit) with the
-evidence it came from, or an explicit "not found".
+`wrag` answers questions about a set of local projects from their docs, plans, dependency manifests
+and git history: what was decided, how something was set up, which library a service uses, where a
+piece of work lives. Every answer cites the project and file or commit it came from, or says
+"not found" instead of guessing.
 
 It is also a measurement bench: every retrieval technique is added one at a time and scored against a
 fixed question set.

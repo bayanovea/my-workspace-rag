@@ -12,7 +12,8 @@ from wrag.store import Store
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        prog="wrag", description="Ask where something lives across your local projects."
+        prog="wrag",
+        description="Ask questions about your local projects; answers cite their sources.",
     )
     sub = parser.add_subparsers(dest="command", required=True)
 

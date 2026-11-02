@@ -1,7 +1,7 @@
 [project]
 name = "wrag"
 version = "0.1.0"
-description = "Ask where something lives across your local projects: RAG over docs, manifests and git history."
+description = "RAG over your local projects: docs, manifests and git history, with cited answers."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
